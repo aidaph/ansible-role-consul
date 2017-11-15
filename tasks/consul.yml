@@ -6,10 +6,10 @@
   docker_container:
     name: consul
     image: "{{ consul_image }}"
-    state: started
+    state: reloaded
     detach: True
     restart_policy: always
-    network_mode: bridge
+    net: bridge
     published_ports:
      - 8300:8300
      - 8301:8301
@@ -31,11 +31,11 @@
   docker_container:
     name: consul
     image: "{{ consul_image }}"
-    state: started
+    state: reloaded
     detach: True
     restart_policy: always
     #network_mode: bridge
-    network_mode: default
+    net: bridge
     published_ports:
      - 8300:8300
      - 8301:8301
@@ -56,10 +56,10 @@
   docker_container:
     name: consul
     image: "{{ consul_image }}"
-    state: started
+    state: reloaded
     detach: True
     restart_policy: always
-    network_mode: bridge
+    net: bridge
     published_ports:
      - 8300:8300
      - 8301:8301
