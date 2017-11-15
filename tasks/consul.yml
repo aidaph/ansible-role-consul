@@ -34,7 +34,8 @@
     state: started
     detach: True
     restart_policy: always
-    network_mode: bridge
+    #network_mode: bridge
+    network_mode: 
     published_ports:
      - 8300:8300
      - 8301:8301
