@@ -9,7 +9,7 @@
     state: started
     detach: True
     restart_policy: always
-#    net: bridge
+    network_mode: bridge
     published_ports:
      - 8300:8300
      - 8301:8301
@@ -34,8 +34,7 @@
     state: started
     detach: True
     restart_policy: always
-    #network_mode: bridge
- #   net: bridge
+    network_mode: bridge
     published_ports:
      - 8300:8300
      - 8301:8301
@@ -59,7 +58,7 @@
     state: started
     detach: True
     restart_policy: always
-  #  net: bridge
+    network_mode: bridge
     published_ports:
      - 8300:8300
      - 8301:8301
