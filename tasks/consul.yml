@@ -8,7 +8,7 @@
     image: "{{ consul_image }}"
     state: started
     detach: True
-    restart_policy: always
+    restart_policy: no
     network_mode: bridge
     published_ports:
      - 8300:8300
@@ -33,7 +33,7 @@
     image: "{{ consul_image }}"
     state: started
     detach: True
-    restart_policy: always
+    restart_policy: none
     network_mode: bridge
     published_ports:
      - 8300:8300
@@ -57,7 +57,7 @@
     image: "{{ consul_image }}"
     state: started
     detach: True
-    restart_policy: always
+    restart_policy: none
     network_mode: bridge
     published_ports:
      - 8300:8300
